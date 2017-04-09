@@ -1,15 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
     <head>
         <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="css/base.css" />
+        <link type="text/css" rel="stylesheet" href="css/index.css" />
     </head>
-
     <body>
-    	<div>hello, world</div>
+        <div class="home-box clearfix">
+            <div class="home-content">
+                <div>
+                    <div>
+                        <div class="index-box">
+                            <div class="article-box">
+                                <div class="article-year">2016</div>
+                                <div class="aritcle-con-box">
+                                    <div class="article-item">
+                                        <div class="article-tit clearfix">
+                                            <a href="#" class="pull-left">angularjs双向绑定</a>
+                                            <p class="pull-right article-time">Dec 17</p>
+                                        </div>
+                                        <div class="article-tips clearfix">
+                                            <p class="pull-left">
+                                                <i class="fa fa-camera-retro"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-header">
+                <div class="header-nav-box">
+                    <div class="header-top">
+                        <img src="images/header.jpg" />
+                        <p class="header-name">
+                            前端战士
+                        </p>
+                        <p class="header-motto">
+                            认真做事，认真生活
+                        </p>
+                    </div>
+                    <div class="home-nav">
+                        <ul class="clearfix">
+                            <li>
+                                <a>首页</a>
+                            </li>
+                            <li>
+                                <a>Web前端</a>
+                            </li>
+                            <li>
+                                <a>碎言碎语</a>
+                            </li>
+                            <li>
+                                <a>关于我</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="home-footer">
+                <div class="footer-box">
+                    <div class="author-info">
+                        <div class="author-pic">
+                            <img src="images/author.jpg"/>
+                        </div>
+                        <div class="author-intro" style="display:none;">
+                            <p>
+                                <span>姓名：</span>
+                                <span>刘少飞</span>
+                            </p>
+                            <p>
+                                <span>性别：</span>
+                                <span>男</span>
+                            </p>
+                            <p>
+                                <span>工作：</span>
+                                <span>web前端工程师</span>
+                            </p>
+                            <p>
+                                <span>Q&nbsp;&nbsp;Q：</span>
+                                <span>2397667718</span>
+                            </p>
+                            <p>
+                                <span>邮箱：</span>
+                                <span>itliushaofei@sina.com</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="article-recommend">
+                        <h3>文章推荐</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
     <script type="text/javascript" src="scripts/libs/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/libs/ui-router.js"></script>
     <script type="text/javascript" src="scripts/libs/jquery.js"></script>
-    <script type="text/javascript">
-    	console.log($);
-    </script>
+    <script type="text/javascript" src="scripts/router.js"></script>
+    <script type="text/javascript" src="scripts/factorys.js"></script>
+    <script type="text/javascript" src="scripts/controllers.js"></script>
+    <script type="text/javascript" src="scripts/directives.js"></script>
 </html>

@@ -1,0 +1,179 @@
+html {
+	height: 100%;
+	color: #fff;
+}
+a {
+	color: #fff;
+}
+body {
+	height: 100%;
+	font-family: 微软雅黑, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	background: black;
+}
+.home-box {
+	margin: 0 auto;
+	padding: 0 250px 0 300px ;
+	min-width: 400px;
+}
+.home-header {
+	position: relative;
+	right: 300px;
+	float: left;
+	width: 300px;
+	margin-left: -100%;
+	box-sizing: border-box;
+
+	border: 1px solid #fff;
+}
+.home-content {
+	position: relative;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+}
+.home-footer {
+	position: relative;
+	float: left;
+	width: 250px;
+	margin-right: -250px;
+	box-sizing: border-box;
+
+	border: 1px solid #fff;
+}
+
+.header-nav-box {
+	margin: 6px;
+	padding: 40px 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	box-shadow: 0px 0px 10px 2px #ccc inset;
+	-webkit-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-moz-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-ms-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-o-box-shadow: 0px 0px 10px 2px #ccc inset;
+	background: rgba(255, 255, 255, 0.2);
+}
+.header-top {
+	margin-bottom: 25px;
+}
+.header-top img {
+	display: block;
+	border: 1px solid #fff;
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	background: url('/public/images/header.jpg') no-repeat center/120px 120px;
+}
+.header-top p {
+	text-align: center;
+	font-size: 14px;
+	color: #0fc;
+	padding-top: 18px;
+}
+.header-top p.header-name {
+	color: #ffa500;
+}
+.header-top p.header-motto {
+	color: #0fc;
+}
+.home-nav ul {
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 30px;
+}
+.home-nav ul li {
+		margin-bottom: 10px;
+	}
+.home-nav ul a {
+	background: black;
+	display: inline-block;
+	width: 124px;
+	line-height: 30px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px 2px #ccc;
+}
+.home-nav ul a:hover {
+	color: #ccc;
+}
+
+.footer-box {
+	margin: 6px;
+	padding: 10px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	box-shadow: 0px 0px 10px 2px #ccc inset;
+	-webkit-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-moz-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-ms-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-o-box-shadow: 0px 0px 10px 2px #ccc inset;
+	background: rgba(255, 255, 255, 0.2);
+}
+.author-info .author-pic img {
+	width: 214px;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+.author-info .author-intro {
+	font-size: 14px;
+}
+
+.home-content {
+	height: 1000px;
+}
+.index-box {
+	padding: 20px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	box-shadow: 0px 0px 10px 2px #ccc inset;
+	-webkit-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-moz-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-ms-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-o-box-shadow: 0px 0px 10px 2px #ccc inset;
+	background: rgba(255, 255, 255, 0.2);
+}
+.article-box {
+	position: relative;
+}
+.article-year {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	color: #008000;
+	font-size: 30px;
+}
+.article-item {
+	padding-left: 100px;
+	padding-right: 20px;
+}
+.article-tit a {
+	color: #ffa500;
+}
+.article-time {
+	color: #0ff;
+	font-size: 14px;
+}
+.article-tips {
+	border-bottom: 2px solid #fff;
+}
