@@ -4,6 +4,10 @@ siteModel.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
 		'name': 'indexPage',
 		'url': '/indexPage',
 		'templateUrl': 'views/home.html'
+	}).state({
+		'name': 'skill',
+		'skill': '/skill',
+		'templateUrl': 'views/skill.html'
 	});
 	$urlRouterProvider.when('', '/indexPage');
 }]);
