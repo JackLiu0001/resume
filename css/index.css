@@ -23,21 +23,23 @@ body {
 	width: 300px;
 	margin-left: -100%;
 	box-sizing: border-box;
-
-	border: 1px solid #fff;
 }
 .home-nav .active {
 	background: #CD5;
 }
+.home-nav a {
+	cursor: pointer;
+}
 .home-nav a.active:hover {
 	color: #fff;
+	cursor: pointer;
 }
 .home-content {
+	margin-top: 6px;
 	position: relative;
 	float: left;
 	width: 100%;
 	box-sizing: border-box;
-	border: 1px solid #fff;
 }
 .home-footer {
 	position: relative;
@@ -45,13 +47,12 @@ body {
 	width: 250px;
 	margin-right: -250px;
 	box-sizing: border-box;
-
-	border: 1px solid #fff;
 }
 
 .header-nav-box {
+	min-height: 500px;
 	margin: 6px;
-	padding: 40px 0;
+	padding: 40px 0 0 0;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -141,12 +142,9 @@ body {
 	font-size: 14px;
 }
 
-.home-content {
-	height: 1000px;
-}
-
 /* home.html */
 .index-box {
+	min-height: 500px;
 	padding: 20px;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
