@@ -72,7 +72,7 @@ body {
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
-	background: url('/public/images/header.jpg') no-repeat center/120px 120px;
+	background: url('../images/header.jpg') no-repeat center/120px 120px;
 }
 .header-top p {
 	text-align: center;
@@ -138,6 +138,8 @@ body {
 .home-content {
 	height: 1000px;
 }
+
+/* home.html */
 .index-box {
 	padding: 20px;
 	border-radius: 8px;
@@ -168,12 +170,31 @@ body {
 	padding-right: 20px;
 }
 .article-tit a {
+	font-size: 18px;
 	color: #ffa500;
+	margin-bottom: 10px;
 }
 .article-time {
 	color: #0ff;
 	font-size: 14px;
 }
-.article-tips {
+.aritcle-con-box {
+	margin-bottom: 20px;
+}
+.article-con {
 	border-bottom: 2px solid #fff;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+.article-con-item {
+	position: relative;
+}
+.article-con-item span:first-child {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.article-con-item span:last-child {
+	padding-left: 66px;
+	display: inline-block;
 }

@@ -1,4 +1,10 @@
 var siteModel = angular.module('app', ['ui.router']);
 siteModel.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-	console.log(1);
+	$stateProvider.state({
+		'name': 'indexPage',
+		'url': '/indexPage',
+		'templateUrl': 'views/home.html'
+	});
+	$urlRouterProvider.when('', '/indexPage');
 }]);
+
