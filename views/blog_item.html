@@ -1,0 +1,35 @@
+<div class="blog-item-box">
+	<!-- <div ng-transclude></div> -->
+	<div class="blog-item">
+		<div class="blog-title" ng-bind="articleData.title"></div>
+		<div class="blog-con-box">
+			<div class="blog-simply" ng-if="isSimple">
+				<span ng-bind="articleData.shortCon">
+				
+				</span>
+				<span ng-click="readAll()">阅读全文</span>
+			</div>
+			<div class="blog-all" ng-if="!isSimple">
+			<pre ng-bind-html="html">
+			</pre>
+		</div>
+		<div class="blog-footer clearfix">
+			<p class="blog-perfect pull-left">
+				<i></i>
+				<span ng-bind="articleData.fabulous"></span>
+			</p>
+			<p class="blog-comment pull-left">
+				<i></i>
+				<span>添加评论<span>
+			</p>
+			<p class="blog-share pull-left">
+				<i></i>
+				<span>分享</span>
+			</p>
+			<p class="blog-share pull-left"  ng-click="notReadAll()" ng-if="!isSimple">
+				<i></i>
+				<span>收起</span>
+			</p>
+		</div>
+	</div>
+</div>

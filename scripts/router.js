@@ -1,4 +1,4 @@
-var siteModel = angular.module('app', ['ui.router']);
+var siteModel = angular.module('app', ['ui.router', 'sitCtr', 'siteDirectives']);
 siteModel.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	$stateProvider.state({
 		'name': 'indexPage',
@@ -6,9 +6,14 @@ siteModel.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
 		'templateUrl': 'views/home.html'
 	}).state({
 		'name': 'skill',
-		'skill': '/skill',
+		'url': '/skill',
 		'templateUrl': 'views/skill.html'
+	}).state({
+		'name': 'techBlog',
+		'url': '/tech_blog',
+		'templateUrl': 'views/tech_blog.html'
 	});
 	$urlRouterProvider.when('', '/indexPage');
+	// $urlRouterProvider.when('', '/techBlog');
 }]);
 

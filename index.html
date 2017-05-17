@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta content="前端开发工程师刘少飞的个人简历" name="description">
         <meta content="web前端，web前端个人简历，前端开发" name="keywords">
-        <link type="text/css" rel="stylesheet" href="css/base.css" />
-        <link type="text/css" rel="stylesheet" href="css/index.css" />
-        <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+        <link type="text/css" rel="stylesheet" href="./css/base.css" />
+        <link type="text/css" rel="stylesheet" href="./css/index.css" />
+        <link type="text/css" rel="stylesheet" href="./css/blog_item.css" />
     </head>
     <body>
-        <div class="home-box clearfix">
+        <div class="home-box clearfix" ng-controller="indexCtr">
             <div class="home-content">
                 <div ui-view>
                 </div>
@@ -29,9 +29,14 @@
                         <ul class="clearfix">
                             <li>
                                 <a ui-sref="indexPage" ui-sref-active="active">首页</a>
+                                <!-- <a>首页</a> -->
                             </li>
                             <li>
                                 <a ui-sref="skill" ui-sref-active="active">技能描述</a>
+                                <!-- <a>技能描述</a> -->
+                            </li>
+                            <li>
+                                <a ui-sref="techBlog" ui-sref-active="active">技术博客</a>
                             </li>
                             <!-- <li>
                                 <a ui-sref-active="active">碎言碎语</a>
@@ -83,11 +88,11 @@
             </div>
         </div>
     </body>
-    <script type="text/javascript" src="scripts/libs/angular.min.js"></script>
-    <script type="text/javascript" src="scripts/libs/ui-router.js"></script>
-    <script type="text/javascript" src="scripts/libs/jquery.js"></script>
-    <script type="text/javascript" src="scripts/router.js"></script>
-    <script type="text/javascript" src="scripts/factorys.js"></script>
-    <script type="text/javascript" src="scripts/controllers.js"></script>
-    <script type="text/javascript" src="scripts/directives.js"></script>
+    <script type="text/javascript" src="./scripts/libs/angular.min.js"></script>
+    <script type="text/javascript" src="./scripts/libs/ui-router.js"></script>
+    <script type="text/javascript" src="./scripts/libs/jquery.js"></script>
+    <script type="text/javascript" src="./scripts/router.js"></script>
+    <script type="text/javascript" src="./scripts/factorys.js"></script>
+    <script type="text/javascript" src="./scripts/controllers.js"></script>
+    <script type="text/javascript" src="./scripts/directives.js"></script>
 </html>

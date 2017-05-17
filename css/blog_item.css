@@ -1,0 +1,83 @@
+/*
+* @Author: liushaofei
+* @Date:   2017-05-12 16:31:00
+* @Last Modified by:   liushaofei
+* @Last Modified time: 2017-05-17 21:03:53
+*/
+.blog-item-box {
+	margin: 6px;
+	padding: 10px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	box-shadow: 0px 0px 10px 2px #ccc inset;
+	-webkit-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-moz-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-ms-box-shadow: 0px 0px 10px 2px #ccc inset;
+	-o-box-shadow: 0px 0px 10px 2px #ccc inset;
+	background: rgba(255, 255, 255, 0.2);
+}
+.blog-item {
+
+	height: 100%;
+	transition: all 3s;
+}
+.blog-con-box {
+	font-size: 14px;
+}
+.blog-all {
+	color: #999;
+}
+.blog-simply span:last-child {
+	color: #8590a6;
+	cursor: pointer;
+	font-size: 16px;
+}
+.blog-title {
+	line-height: 40px;
+	color: #ffa500;
+	font-size: 16px;
+}
+.blog-footer {
+	padding-top: 14px;
+}
+.blog-footer i, blog-footer span{
+	display: inline-block;
+}
+.blog-perfect,.blog-comment,.blog-share {
+	padding: 4px;
+	margin: 0 10px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px 2px #ccc;
+	cursor: pointer;
+}
+.blog-perfect i, .blog-comment i, .blog-share i {
+	width: 20px;
+	height: 20px;
+	vertical-align: top;
+}
+.blog-perfect i {
+	background: url('../images/appreciate.png') no-repeat;
+	background-size: 20px;
+}
+.blog-comment i {
+	background: url('../images/comment_light.png') no-repeat;
+	background-size: 20px;
+}
+.blog-share i {
+	background: url('../images/appreciate.png') no-repeat;
+	background-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
