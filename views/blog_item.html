@@ -14,11 +14,11 @@
 			</pre>
 		</div>
 		<div class="blog-footer clearfix">
-			<p class="blog-perfect pull-left">
+			<p class="blog-perfect pull-left" ng-click="fabulousFn()">
 				<i></i>
 				<span ng-bind="articleData.fabulous"></span>
 			</p>
-			<p class="blog-comment pull-left">
+			<p class="blog-comment pull-left" ng-click="commentFn()">
 				<i></i>
 				<span>添加评论<span>
 			</p>
@@ -30,6 +30,20 @@
 				<i></i>
 				<span>收起</span>
 			</p>
+		</div>
+		<div class="blog-user-comment">
+			<div class="comment-num">
+				<span>0条评论</span>
+			</div>
+			<div class="comment-operate">
+				<div class="comment-con">
+					<div class="comment-con-item"></div>
+				</div>
+				<div class="comment-commit">
+					<div contenteditable="true"></div>
+					<button>评论</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

@@ -2,7 +2,7 @@
 * @Author: liushaofei
 * @Date:   2017-04-08 19:51:56
 * @Last Modified by:   liushaofei
-* @Last Modified time: 2017-05-17 20:55:16
+* @Last Modified time: 2017-05-17 21:16:08
 */
 var siteModule = angular.module('siteDirectives', []);
 
@@ -27,9 +27,20 @@ siteModule.directive('techblogdirect', function() {
 			$scope.notReadAll = function() {
 				$scope.isSimple = true;
 			};
+
+			// 	点赞
+			$scope.fabulousFn = function() {
+				$scope.articleData.fabulous++;
+			}
+
+			// 评论
+			$scope.commentFn = function() {
+				
+			};
 		},
 		controllerAs: 'techBlogDireCtrName',
 		link: function(scope, $element, $attrs) {
+
 		}
 	}
 });

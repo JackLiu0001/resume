@@ -2,7 +2,7 @@
 * @Author: liushaofei
 * @Date:   2017-05-12 16:31:00
 * @Last Modified by:   liushaofei
-* @Last Modified time: 2017-05-17 21:03:53
+* @Last Modified time: 2017-05-19 14:50:02
 */
 .blog-item-box {
 	margin: 6px;
@@ -53,6 +53,9 @@
 	box-shadow: 0px 0px 10px 2px #ccc;
 	cursor: pointer;
 }
+.blog-perfect:hover,.blog-comment:hover,.blog-share:hover {
+	background: #9A5;
+}
 .blog-perfect i, .blog-comment i, .blog-share i {
 	width: 20px;
 	height: 20px;
@@ -71,6 +74,58 @@
 	background-size: 20px;
 }
 
+.blog-user-comment {
+	border: 1px solid #fff;
+	border-radius: 4px;
+	margin-top: 20px;
+}
+.blog-user-comment .comment-num {
+	line-height: 40px;
+	padding: 0 10px;
+}
+.comment-operate {
+	border-top: 1px solid #fff;
+}
+.comment-commit {
+	position: relative;
+	padding: 10px;
+	line-height: 40px;
+	padding-right: 100px;
+}
+.comment-commit > div {
+	padding: 0 6px;
+	width: 100%;
+	min-height: 28px;
+	line-height: 28px;
+	outline:none;
+	max-height: 120px;
+	overflow: scroll;
+	border: 1px solid #fff;
+}
+.comment-commit button {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	padding: 6px 15px;
+	border-radius: 2px;
+	background: #CD0;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+}
+.comment-commit button:hover {
+	background: #CD9;
+}
+.comment-commit {
+	border-top: 1px solid #fff;
+}
+.comment-con {
+	padding: 10px;
+}
+.comment-con-item {
+	height: 30px;
+	border-bottom: 1px solid #fff;
+}
 
 
 
