@@ -31,17 +31,17 @@
 				<span>收起</span>
 			</p>
 		</div>
-		<div class="blog-user-comment">
+		<div class="blog-user-comment" ng-show="showComment">
 			<div class="comment-num">
-				<span>0条评论</span>
+				<span ng-bind="articleData.comment.length"></span><span>条评论</span>
 			</div>
 			<div class="comment-operate">
-				<div class="comment-con">
-					<div class="comment-con-item"></div>
+				<div class="comment-con" ng-repeat="item in allComments">
+					<div class="comment-con-item" ng-bind="item"></div>
 				</div>
 				<div class="comment-commit">
-					<div contenteditable="true"></div>
-					<button>评论</button>
+					<div contenteditable="true" ng-model="writeComment"></div>
+					<button class="addComment">评论</button>
 				</div>
 			</div>
 		</div>

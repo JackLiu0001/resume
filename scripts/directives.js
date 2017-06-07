@@ -2,7 +2,7 @@
 * @Author: liushaofei
 * @Date:   2017-04-08 19:51:56
 * @Last Modified by:   liushaofei
-* @Last Modified time: 2017-05-23 18:07:20
+* @Last Modified time: 2017-05-25 10:08:33
 */
 var siteModule = angular.module('siteDirectives', []);
 
@@ -19,7 +19,9 @@ siteModule.directive('techblogdirect', function() {
 		controller: function($scope, $sce) {
 			$scope.name = 'liushaofei';
 			$scope.isSimple = true;
+			$scope.showComment = false;
 			$scope.articleData = JSON.parse($scope.dataInfo);
+			$scope.allComments = $scope.articleData.comment;
 			$scope.html = $sce.trustAsHtml($scope.articleData.con);
 			$scope.readAll = function() {
 				$scope.isSimple = false;
@@ -35,12 +37,29 @@ siteModule.directive('techblogdirect', function() {
 
 			// 评论
 			$scope.commentFn = function() {
-				
+				$scope.showComment = !$scope.showComment;
 			};
 		},
 		controllerAs: 'techBlogDireCtrName',
 		link: function(scope, $element, $attrs) {
+			console.log($element);
+			var addBtn = $('.addComment');
+			addBtn.on('click', function() {
+				alert(1);
+			});
+		}
+	}
+});
 
+siteModule.directive('testBoot', function() {
+	return {
+		template: `<ul class="nav nav-tabs">
+		  <li role="presentation" class="active"><a href="#">Home</a></li>
+		  <li role="presentation"><a href="#">Profile</a></li>
+		  <li role="presentation"><a href="#">Messages</a></li>
+		</ul>`,
+		link: function() {
+			
 		}
 	}
 });

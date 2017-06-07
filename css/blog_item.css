@@ -2,7 +2,7 @@
 * @Author: liushaofei
 * @Date:   2017-05-12 16:31:00
 * @Last Modified by:   liushaofei
-* @Last Modified time: 2017-05-19 14:50:02
+* @Last Modified time: 2017-05-25 10:18:03
 */
 .blog-item-box {
 	margin: 6px;
@@ -101,11 +101,13 @@
 	max-height: 120px;
 	overflow: scroll;
 	border: 1px solid #fff;
+	border-radius: 4px;
 }
 .comment-commit button {
 	position: absolute;
 	right: 20px;
 	top: 10px;
+	line-height: normal;
 	padding: 6px 15px;
 	border-radius: 2px;
 	background: #CD0;
@@ -116,15 +118,16 @@
 .comment-commit button:hover {
 	background: #CD9;
 }
-.comment-commit {
-	border-top: 1px solid #fff;
-}
 .comment-con {
-	padding: 10px;
+	padding: 0 10px;
 }
 .comment-con-item {
-	height: 30px;
+	line-height: 30px;
+	margin-bottom: 6px;
 	border-bottom: 1px solid #fff;
+}
+.blog-user-comment {
+
 }
 
 
