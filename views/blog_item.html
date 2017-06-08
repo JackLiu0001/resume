@@ -36,11 +36,11 @@
 				<span ng-bind="articleData.comment.length"></span><span>条评论</span>
 			</div>
 			<div class="comment-operate">
-				<div class="comment-con" ng-repeat="item in allComments">
-					<div class="comment-con-item" ng-bind="item"></div>
+				<div class="comment-con" ng-repeat="item in allComments track by $index">
+					<div class="comment-con-item" ng-bind=" ($index + 1) +'、'+item"></div>
 				</div>
 				<div class="comment-commit">
-					<div contenteditable="true" ng-model="writeComment"></div>
+					<div contenteditable="true"></div>
 					<button class="addComment">评论</button>
 				</div>
 			</div>

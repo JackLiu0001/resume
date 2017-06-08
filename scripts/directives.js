@@ -2,7 +2,7 @@
 * @Author: liushaofei
 * @Date:   2017-04-08 19:51:56
 * @Last Modified by:   liushaofei
-* @Last Modified time: 2017-05-25 10:08:33
+* @Last Modified time: 2017-06-08 16:17:38
 */
 var siteModule = angular.module('siteDirectives', []);
 
@@ -42,10 +42,13 @@ siteModule.directive('techblogdirect', function() {
 		},
 		controllerAs: 'techBlogDireCtrName',
 		link: function(scope, $element, $attrs) {
-			console.log($element);
-			var addBtn = $('.addComment');
-			addBtn.on('click', function() {
-				alert(1);
+			var eleBox = $($element);
+			eleBox.find('.addComment').on('click', function() {
+				var addComment = eleBox.find('.comment-commit div').html();
+				if (addComment && !!$.trim(addComment)) {
+					scope.allComments.push(addComment);
+					scope.$apply();
+				}
 			});
 		}
 	}
