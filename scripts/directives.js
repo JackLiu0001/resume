@@ -2,7 +2,7 @@
 * @Author: liushaofei
 * @Date:   2017-04-08 19:51:56
 * @Last Modified by:   liushaofei
-* @Last Modified time: 2017-06-08 16:17:38
+* @Last Modified time: 2017-06-08 16:25:06
 */
 var siteModule = angular.module('siteDirectives', []);
 
@@ -45,6 +45,7 @@ siteModule.directive('techblogdirect', function() {
 			var eleBox = $($element);
 			eleBox.find('.addComment').on('click', function() {
 				var addComment = eleBox.find('.comment-commit div').html();
+				eleBox.find('.comment-commit div').html('');
 				if (addComment && !!$.trim(addComment)) {
 					scope.allComments.push(addComment);
 					scope.$apply();
