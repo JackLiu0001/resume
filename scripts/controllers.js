@@ -2,7 +2,7 @@
 * @Author: liushaofei
 * @Date:   2017-04-08 19:51:47
 * @Last Modified by:   liushaofei
-* @Last Modified time: 2017-05-25 14:30:11
+* @Last Modified time: 2017-06-20 14:24:36
 */
 
 var siteModule = angular.module('sitCtr', []);
@@ -19,8 +19,8 @@ siteModule.controller('techBlog', ['$scope', '$http', '$uibModal', function($sco
 		'title': 'jsonp跨域',
 		'shortCon': "最简单的深拷贝方法 b = JSON.parse( JSON.stringify(a) ); 如果a是最基本的数组、对象、字符串、数字、布尔型可以采用这种方法。 问题： 1、无法复制函数。 var a = { 'name': function() { alert(…",
 		'comment': [
-			'有待改善，请继续努力',
-			'加油！加油！加油！'
+			'<div>有待改善，请继续努力</div>',
+			'<div>加油！加油！加油！</div>'
 		],
 		'con': 	
 			"<code>function jsonp(json) {\n"
@@ -285,6 +285,16 @@ siteModule.controller('techBlog', ['$scope', '$http', '$uibModal', function($sco
 		,
 		'fabulous': 10,
 	}];
+	// $http({
+	// 	method: 'get',
+	// 	url: './scripts/data/articledata.json',
+	// }).then(function(res) {
+	// 	debugger;
+	// 	console.log(res);
+	// }, function(error) {
+	// 	debugger;
+	// 	console.log(error);
+	// });
 
 	// modal text
 	// $scope.btnClick = function() {

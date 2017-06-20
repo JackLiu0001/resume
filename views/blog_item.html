@@ -36,8 +36,9 @@
 				<span ng-bind="articleData.comment.length"></span><span>条评论</span>
 			</div>
 			<div class="comment-operate">
-				<div class="comment-con" ng-repeat="item in allComments track by $index">
-					<div class="comment-con-item" ng-bind=" ($index + 1) +'、'+item"></div>
+				<div class="comment-con clearfix" ng-repeat="item in allComments track by $index">
+					<span class="pull-left" ng-bind="$index + '、'"></span>
+					<div class="comment-con-item pull-left" ng-bind-html="item"></div>
 				</div>
 				<div class="comment-commit">
 					<div contenteditable="true"></div>

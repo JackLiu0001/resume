@@ -2,11 +2,11 @@
 * @Author: liushaofei
 * @Date:   2017-04-08 19:51:56
 * @Last Modified by:   liushaofei
-* @Last Modified time: 2017-06-08 16:25:06
+* @Last Modified time: 2017-06-20 15:44:19
 */
 var siteModule = angular.module('siteDirectives', []);
 
-siteModule.directive('techblogdirect', function() {
+siteModule.directive('techblogdirect', ['$sce', function($sce) {
 	return {
 		restrict: 'AE',
 		// replace: true, // 是否替换掉自定义的指令，默认是false（不替换）
@@ -22,6 +22,9 @@ siteModule.directive('techblogdirect', function() {
 			$scope.showComment = false;
 			$scope.articleData = JSON.parse($scope.dataInfo);
 			$scope.allComments = $scope.articleData.comment;
+			$scope.allComments.forEach(function(value, index, arr) {
+				$scope.allComments[index] = $sce.trustAsHtml(value);
+			});
 			$scope.html = $sce.trustAsHtml($scope.articleData.con);
 			$scope.readAll = function() {
 				$scope.isSimple = false;
@@ -39,6 +42,7 @@ siteModule.directive('techblogdirect', function() {
 			$scope.commentFn = function() {
 				$scope.showComment = !$scope.showComment;
 			};
+			console.log(2);
 		},
 		controllerAs: 'techBlogDireCtrName',
 		link: function(scope, $element, $attrs) {
@@ -47,13 +51,13 @@ siteModule.directive('techblogdirect', function() {
 				var addComment = eleBox.find('.comment-commit div').html();
 				eleBox.find('.comment-commit div').html('');
 				if (addComment && !!$.trim(addComment)) {
-					scope.allComments.push(addComment);
+					scope.allComments.push($sce.trustAsHtml(addComment));
 					scope.$apply();
 				}
 			});
 		}
 	}
-});
+}]);
 
 siteModule.directive('testBoot', function() {
 	return {
