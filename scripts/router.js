@@ -17,7 +17,7 @@ siteModel.config(['$stateProvider', '$urlRouterProvider', function($stateProvide
 		'url': '/test',
 		'templateUrl': 'views/test.html'
 	});
-	// $urlRouterProvider.when('', '/indexPage');
-	$urlRouterProvider.when('', '/techBlog');
+	$urlRouterProvider.when('', '/indexPage');
+	// $urlRouterProvider.when('', '/techBlog');
 }]);
 
