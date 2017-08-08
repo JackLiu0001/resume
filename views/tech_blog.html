@@ -20,7 +20,7 @@
     </script>
 	<techblogdirect ng-repeat="item in articleData" article-data-info="{{item}}"></techblogdirect>
 
-	<!-- 模版 ng-include引入模版 两种方式：1、<script type="text/ng-template" id=""></script>.2、<div ng-include="'./views/test.html'"></div>-->
+	<!-- 模版 ng-include引入模版 两种方式：1、script定义模版,<script type="text/ng-template" id="test.html"></script>.<div ng-include="'test.html'"></div>2、新建html模版文件test.html，div的include里面是路径<div ng-include="'./views/test.html'"></div>-->
 	<!-- <div ng-include="'html_part.html'"></div>
 	<script type="text/ng-template" id="html_part.html">
 	  <div>hahah</div>

@@ -2,7 +2,7 @@
 * @Author: liushaofei
 * @Date:   2017-04-08 19:51:47
 * @Last Modified by:   liushaofei
-* @Last Modified time: 2017-06-20 14:24:36
+* @Last Modified time: 2017-08-01 16:10:20
 */
 
 var siteModule = angular.module('sitCtr', []);
@@ -285,27 +285,10 @@ siteModule.controller('techBlog', ['$scope', '$http', '$uibModal', function($sco
 		,
 		'fabulous': 10,
 	}];
-	// $http({
-	// 	method: 'get',
-	// 	url: './scripts/data/articledata.json',
-	// }).then(function(res) {
-	// 	debugger;
-	// 	console.log(res);
-	// }, function(error) {
-	// 	debugger;
-	// 	console.log(error);
-	// });
-
-	// modal text
-	// $scope.btnClick = function() {
-	// 	$uibModal.open({
-	// 		templateUrl: 'myModalContent.html'
-	// 	});
-	// }
 
 }]);
 
 // test
-siteModule.controller('testCtr', ['$scope', '$http', function($scope, $http) {
-
+siteModule.controller('testCtr', ['$scope', '$http', 'getNameFactory', 'setNameFactory', function($scope, $http, getNameFactory, setNameFactory) {
+	console.log(setNameFactory.getName());
 }]);

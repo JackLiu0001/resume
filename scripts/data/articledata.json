@@ -1,0 +1,12 @@
+{
+	"content": [{
+		"id": 1,
+		"title": "jsonp跨域",
+		"shortCon": "最简单的深拷贝方法 b = JSON.parse( JSON.stringify(a) ); 如果a是最基本的数组、对象、字符串、数字、布尔型可以采用这种方法。 问题： 1、无法复制函数。 var a = { 'name': function() { alert(…",
+		"comment": [
+			"有待改善，请继续努力",
+			"加油！加油！加油！"
+		],
+		"fabulous": 10,
+	}]
+}
